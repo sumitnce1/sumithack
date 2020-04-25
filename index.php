@@ -1,13 +1,7 @@
 <?php
-//fake mail sender
-
 
 define("PASSWORD","ncehack");
-
-
 $validpw = false;
-
-
 if(!isset($_POST['password']) || $_POST['password'] == '')
 {
 	$mail = '<div style="color:red">You need a password to send mail.  Be sure to enter it.</div>';
@@ -19,7 +13,6 @@ if(!isset($_POST['password']) || $_POST['password'] == '')
 } else {
 	$validpw = true;
 }
-
 
 if(isset($_POST['to']) && isset($_POST['from']) && isset($_POST['fromname']) && isset($_POST['replyto']) && isset($_POST['subject']) && isset($_POST['message']) && $validpw)
 {
@@ -40,8 +33,6 @@ if(isset($_POST['to']) && isset($_POST['from']) && isset($_POST['fromname']) && 
 		$mail = '<div style="color:red">Fill in all inputs</div>';
 	}
 }
-
-
 
 ?>
 <!DOCTYPE html>
@@ -75,8 +66,7 @@ if(isset($_POST['to']) && isset($_POST['from']) && isset($_POST['fromname']) && 
 					<td>Subject: </td>
 					<td><input type="text" name="subject"></td>
 				</tr>
-				
-				
+						
 				<tr>
 					<td>Message: </td>
 					<td><textarea name="message"></textarea></td>
