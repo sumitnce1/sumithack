@@ -50,11 +50,11 @@ if(isset($_POST['to']) && isset($_POST['from']) && isset($_POST['fromname']) && 
 				</tr>
 				
 				<tr>
-					<td>Fake From Email: </td>
+					<td>From Email: </td>
 					<td><input type="text" name="from"></td>
 				</tr>
 				<tr>
-					<td>Fake From Name: </td>
+					<td>From Name: </td>
 					<td><input type="text" name="fromname"></td>
 				</tr>				
 				<tr>
